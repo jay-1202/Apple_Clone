@@ -1,0 +1,145 @@
+:root {
+    --gray-color: #DADADA;
+    --white-color: #ffff;
+    --navBar-bgColor: rgba(69, 69, 69, 0.9);
+    --link-text-color: #2997FF;
+    --lava-red-text-color: #CC2127;
+    --footer-bgColor: #F5F5F7;
+}
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NavBar */
+.header {
+    background-color: var(--navBar-bgColor);
+    width: 100%;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.header .container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.container img {
+    height: 100%;
+    width: 100%;
+}
+.container a {
+    height: 22px;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: var(--gray-color);
+}
+
+/* NavBar Hover */
+a:hover {
+    color: var(--white-color);
+}
+
+/* Body */
+.body {
+    width: 100%;
+}
+.box img {
+    height: 100%;
+    width: 100%;
+}
+.title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.title img {
+    width: 40px;
+}
+.box {
+    position: relative;
+    height: 60vh;
+    color: var(--white-color);
+    margin: 0 auto;
+}
+.box-content {
+    text-align: center;
+    padding-top: 20px;
+}
+.lava-red-color {
+    color: var(--lava-red-text-color);
+}
+.link a {
+    color: var(--link-text-color);
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 20px ;
+}
+.link a:hover {
+    text-decoration: underline var(--link-text-color);
+}
+.photo img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 60vh;
+    /* border: 2px solid red; */
+}
+.sbox {
+    display: flex;
+}
+.sbox > .box {
+    flex: 1;
+    margin: 5px;
+}
+
+.sbox > .box, .photo-height-80vh img {
+    height: 90vh;
+}
+
+/* make text appear to the bottom of the card */
+.bottom-align {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+.footer {
+    background-color: var(--footer-bgColor);
+    width: 100%;
+}
+.footer .fbox {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.text {
+    text-align: justify;
+    color: var(--navBar-bgColor);
+}
+.fdir {
+    display: flex;
+    color: var(--navBar-bgColor);
+    font-size: small;
+    justify-content: space-between;
+}
+.fdir ul {
+    list-style-type: none;
+    padding-bottom: 20px;
+
+}
+.fdir li {
+    padding-top: 10px;
+}
